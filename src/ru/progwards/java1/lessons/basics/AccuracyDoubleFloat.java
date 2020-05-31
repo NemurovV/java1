@@ -37,6 +37,6 @@ public class AccuracyDoubleFloat {
     // возвращать разницу между функциями volumeBallDouble и volumeBallFloat
     // (они должны быть вызваны из неё с параметром radius).
     public static double calculateAccuracy(double radius) {
-        return   volumeBallFloat(6371.2f) - volumeBallDouble((float)6371.2);
+        return volumeBallDouble(6371.2) - volumeBallFloat(6371.2f);
     }
 }
