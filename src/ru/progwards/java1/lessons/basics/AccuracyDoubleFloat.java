@@ -21,7 +21,7 @@ public class AccuracyDoubleFloat {
     // объём шара с радиусом radius и основана на типе double.
     public static double volumeBallDouble(double radius) {
         double pi = 3.14;
-        return 4 / (3 * pi * radius * radius * radius);
+        return 4.0 / 3.0 * pi * radius * radius * radius;
     }
 
     //3.2 Реализовать функцию
@@ -29,7 +29,7 @@ public class AccuracyDoubleFloat {
     // объём шара с радиусом radius и основана на типе float.
     public static float volumeBallFloat(float radius) {
         float pi = 3.14f;
-        return 4 / (3 * pi * radius * radius * radius);
+        return 4.0f / 3.0f * pi * radius * radius * radius;
     }
 
     //3.3 Реализовать функцию
@@ -37,6 +37,6 @@ public class AccuracyDoubleFloat {
     // возвращать разницу между функциями volumeBallDouble и volumeBallFloat
     // (они должны быть вызваны из неё с параметром radius).
     public static double calculateAccuracy(double radius) {
-        return  volumeBallFloat(6371.2f) - volumeBallDouble((float)6371.2);
+        return   volumeBallFloat(6371.2f) - volumeBallDouble((float)6371.2);
     }
 }
