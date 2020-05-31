@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.compare_if_cycles;
 public class TriangleInfo {
     public static void main(String[] args) {
         System.out.println(isTriangle(3, 4, 2));
-        System.out.println(isRightTriangle(6, 8, 10));
+        System.out.println(isRightTriangle(5, 4, 3));
         System.out.println(isIsoscelesTriangle(5, 3, 2));
     }
 
@@ -23,7 +23,7 @@ public class TriangleInfo {
 //    (сумма квадратов катетов равна квадрату гипотенузы).
     public static boolean isRightTriangle(int a, int b, int c) {
         boolean result;
-        return c * c == a * a + b * b;
+        return c * c == a * a + b * b | a * a == b * b + c * c | b * b == a * a + c * c;
     }
 
     //    2.3 Реализовать функцию
