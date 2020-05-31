@@ -2,16 +2,24 @@ package ru.progwards.java1.lessons.compare_if_cycles;
 
 public class TriangleSimpleInfo {
     public static void main(String[] args) {
-        System.out.println(maxSide(10, 5,-1));
-        System.out.println(minSide(-2, 4, 0));
-        System.out.println(isEquilateralTriangle(2, 1, 2));
+        System.out.println(maxSide(10, 15,21));
+        System.out.println(minSide(2, 10, 0));
+        System.out.println(isEquilateralTriangle(2, 2, 1));
     }
 /*1.1 Реализовать функцию
 public static int maxSide(int a, int b, int c), которая получает параметрами длины сторон треугольника,
 а вернуть должна наибольшую длину стороны.
 */
 public static int maxSide(int a, int b, int c) {
-    return a = Math.max(Math.max(a, b), c);
+    int max;
+    if (a > b && a > c) {
+        max = a;
+    }else if (b > a && b > c) {
+        max = b;
+    } else {
+        max = c;
+    }
+    return max;
 }
 
 /*
@@ -20,7 +28,16 @@ public static int minSide(int a, int b, int c), которая получает 
 а вернуть должна наименьшую длину стороны.
 */
 public static int minSide(int a, int b, int c) {
-    return a = Math.min(Math.min(a, b), c);
+    int min;
+    if (a < b && a < c) {
+        min = a;
+    }else if (b < a && b < c) {
+        min = b;
+    } else {
+        min = c;
+    }
+    return min;
+
 }
 /*
 1.3 Реализовать функцию
@@ -29,7 +46,7 @@ public static boolean isEquilateralTriangle(int a, int b, int c), которая
 */
 public static boolean isEquilateralTriangle(int a, int b, int c) {
     boolean bool;
-    return  a == b & a == c;
+    return  a == b && a == c;
 }
 
 }

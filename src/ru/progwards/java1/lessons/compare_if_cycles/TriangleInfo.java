@@ -13,7 +13,7 @@ public class TriangleInfo {
 //    что в треугольнике длина каждой из сторон меньше суммы длин двух других сторон.
     public static boolean isTriangle(int a, int b, int c) {
         boolean result;
-        return a + b > c & a + c > b & b + c > a;
+        return a + b > c && a + c > b && b + c > a;
     }
 
     //    2.2 Реализовать функцию
@@ -23,7 +23,7 @@ public class TriangleInfo {
 //    (сумма квадратов катетов равна квадрату гипотенузы).
     public static boolean isRightTriangle(int a, int b, int c) {
         boolean result;
-        return c * c == a * a + b * b | a * a == b * b + c * c | b * b == a * a + c * c;
+        return c * c == a * a + b * b || a * a == b * b + c * c || b * b == a * a + c * c;
     }
 
     //    2.3 Реализовать функцию
@@ -32,6 +32,6 @@ public class TriangleInfo {
 //    что в равнобедренном треугольнике есть две равные стороны.
     public static boolean isIsoscelesTriangle(int a, int b, int c) {
         boolean result;
-        return a == b | a == c | b == c;
+        return a == b || a == c || b == c;
     }
 }
