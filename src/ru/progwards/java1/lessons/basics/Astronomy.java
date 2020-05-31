@@ -37,9 +37,10 @@ public class Astronomy {
     }
 
     //public static Double earthVsMercury(), которая вычисляет
-    //отношение площади поверхности Земли к площади поверхности Меркурия используя готовые функции площадей планет
+    //отношение площади поверхности Земли к площади поверхности
+    // Меркурия используя готовые функции площадей планет
     public static Double earthVsMercury() {
-        return mercurySquare() / earthSquare();
+        return earthSquare() / mercurySquare();
     }
 
     //public static Double earthVsJupiter(), которая вычисляет
