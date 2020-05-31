@@ -39,12 +39,12 @@ public class Astronomy {
     //public static Double earthVsMercury(), которая вычисляет
     //отношение площади поверхности Земли к площади поверхности Меркурия используя готовые функции площадей планет
     public static Double earthVsMercury() {
-        return  earthSquare() - mercurySquare();
+        return mercurySquare() / earthSquare();
     }
 
     //public static Double earthVsJupiter(), которая вычисляет
     //отношение площади поверхности Земли к площади поверхности Юпитера используя готовые функции площадей планет
     public static Double earthVsJupiter() {
-        return jupiterSquare() - earthSquare();
+        return earthSquare() /jupiterSquare();
     }
 }
