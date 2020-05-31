@@ -1,13 +1,13 @@
 package ru.progwards.java1.lessons.compare_if_cycles;
 
-public class CyclesGoldenFibo {
+//public class CyclesGoldenFibo {
 
     //    3.1 Реализовать функцию
 //    public static boolean containsDigit(int number, int digit), которая будет возвращать true,
 //    если число number содержит цифру digit.
-    public static boolean containsDigit(int number, int digit) {
-
-    }
+//    public static boolean containsDigit(int number, int digit) {
+//
+//    }
 
     //
 //    Теперь проведём исследование. Есть ли у Золотого треугольника связь с числами Фибоначчи.
@@ -21,18 +21,18 @@ public class CyclesGoldenFibo {
 //    public static int fiboNumber(int n), которая будет возвращать n-ое число Фибоначчи
 //    (нумерация начинается с 1, то есть при n = 3 должно вернуться число Фибоначчи 2,
 //    а при n = 10 число 55).
-    public static int fiboNumber(int n) {
-
-    }
+//    public static int fiboNumber(int n) {
+//
+//    }
 
     //    3.3 Реализовать функцию
 //    public static boolean isGoldenTriangle(int a, int b, int c), которая будет возвращать true,
 //    если треугольник со сторонами a, b, c является Золотым. Определим критерии.
 //    Он должен быть равнобедренным и отношение ребра к основанию должно лежать
 //    между значениями 1.61703 и 1.61903.
-    public static boolean isGoldenTriangle(int a, int b, int c) {
-        
-    }
+//    public static boolean isGoldenTriangle(int a, int b, int c) {
+//
+//    }
 
     //    Далее в функции public static void main(String[] args) вывести на консоль,
 //    используя цикл, 15 первых чисел Фибоначчи. После этого, используя вложенные циклы,
@@ -41,8 +41,8 @@ public class CyclesGoldenFibo {
 //    длины основания и рёбер этих треугольников.
 //    Если всё получилось, посмотрите на консоль и сделайте вывод: есть ли связь
 //    между числами Фибоначчи и Золотыми треугольниками.
-    public static void main(String[] args) {
-
-    }
-
-}
+//    public static void main(String[] args) {
+//
+//    }
+//
+//}
